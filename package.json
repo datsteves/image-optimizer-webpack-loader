@@ -1,6 +1,6 @@
 {
   "name": "image-optimizer-webpack-loader",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Optimizes JPEG's within your Webpack project",
   "main": "build/index.js",
   "scripts": {

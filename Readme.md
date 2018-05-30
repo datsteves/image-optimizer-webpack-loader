@@ -27,7 +27,7 @@ const config = {
   },
   module: {
     rules: [{
-      test: /\.(gif|png|jpe?g|svg)$/i,
+      test: /\.jpe?g$/i,
       use: [
         'file-loader',
         'image-optimizer-webpack-loader',
