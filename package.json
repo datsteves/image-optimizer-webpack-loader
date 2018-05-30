@@ -1,0 +1,43 @@
+{
+  "name": "image-optimizer-webpack-loader",
+  "version": "0.0.2",
+  "description": "Optimizes JPEG's within your Webpack project",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "babel src --out-dir build --ignore spec.js,test.js",
+    "build:example": "yarn build && webpack --config example/webpack.config.js --progress",
+    "prepublish": "yarn build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Steffen Meyer @datsteves",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.12.0",
+    "file-loader": "^1.1.11",
+    "webpack": "^4.10.1",
+    "webpack-cli": "^2.1.4"
+  },
+  "dependencies": {
+    "image-optimizer-core": "^1.1.2"
+  },
+  "peerDependencies": {
+    "webpack": "^2.0.0 || ^3.0.0 || ^4.0.0",
+    "file-loader": "1.1.11"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/datsteves/image-optimizer-webpack-loader.git"
+  },
+  "homepage": "https://github.com/datsteves/image-optimizer-webpack-loader",
+  "keywords": [
+    "image",
+    "optimization",
+    "jpeg",
+    "webpack",
+    "loader"
+  ]
+}
